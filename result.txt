@@ -28,7 +28,7 @@ s_id x1
 s_assign =
 s_id x1
 s_div /
-s_num 0
+s_num 2
 *
 s_closeac }
 *

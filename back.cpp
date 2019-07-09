@@ -3,13 +3,25 @@
 
 using namespace std; 
 
-#define p(x0)x0*x0
-#define p1(x1)x1/0
-double x0 = 3;
+void p ( double &x0 ) 
+{ 
+    x0 = x0 * x0 ;
+    cout<< x0 << endl; 
+    cout<< &x0 << endl; 
+} 
+
+void p1 ( double &x1 ) 
+{ 
+    x1 = x1 / 2 ;
+    cout<< x1 << endl; 
+    cout<< &x1 << endl; 
+} 
 int main()
 { 
-    cout << x0 << endl;
-    cout<< p(x0) <<endl;
-    cout<< p1(x0) <<endl;
+    cout << "parameters addresses" << endl;
+    double x0 = 2;
+    cout << &x0 << endl;
+    p(x0);
+    p1(x0);
     cout << x0 << endl;
 } 

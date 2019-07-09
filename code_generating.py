@@ -1,5 +1,5 @@
 
-import math
+import sys
 import random
 
 
@@ -8,7 +8,8 @@ lex_file = open('result.txt', 'r')
 file.write('#include <iostream> \n')
 file.write('#include <fstream> \n\n')
 file.write('using namespace std; \n')
-mode = 4
+mode = sys.argv[1]
+mode = int(mode)
 if mode == 1: #pass by val
     map_words = {
         'def': 'void',
