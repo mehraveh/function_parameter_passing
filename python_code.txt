@@ -1,10 +1,8 @@
-def p (x0)
+def p (a)
 {
-    x0 = x0 * x0
+    a = a + 4
+
+
 }
 
-def p1 (x1)
-{
-    x1 = x1 / 2
-}
 

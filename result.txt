@@ -2,33 +2,19 @@
 s_func def
 s_id p
 s_openpar (
-s_id x0
+s_id a
 s_closepar )
 *
 s_openac {
 *
-s_id x0
+s_id a
 s_assign =
-s_id x0
-s_mul *
-s_id x0
+s_id a
+s_plus +
+s_num 4
+*
+*
 *
 s_closeac }
 *
-*
-s_func def
-s_id p1
-s_openpar (
-s_id x1
-s_closepar )
-*
-s_openac {
-*
-s_id x1
-s_assign =
-s_id x1
-s_div /
-s_num 2
-*
-s_closeac }
 *
